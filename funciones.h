@@ -17,8 +17,8 @@ typedef struct {
 
 /* Prototipos de funciones */
 
-void cargar_articulos(articulos_t articulos[]);
-void mostrar_articulos(const articulos_t articulos[]);
-void ordenar_articulos(articulos_t articulos[]);
+void cargar_articulos(articulos_t *articulos);
+void mostrar_articulos(const articulos_t *articulos);
+void ordenar_articulos(articulos_t *articulos);
 
 #endif

@@ -4,7 +4,7 @@
 
 /* Carga de Artículos */
 
-void cargar_articulos(articulos_t articulos[]){
+void cargar_articulos(articulos_t *articulos){
 
     int opc = 0, i, articulo_index, sucursal;
     char articulo[90];
@@ -42,7 +42,7 @@ void cargar_articulos(articulos_t articulos[]){
 
 /* Impresión de Fichas Cargadas */
 
-void mostrar_articulos(const articulos_t articulos[]) {
+void mostrar_articulos(const articulos_t *articulos) {
     int i = 0;
     
     printf("\n\n--- Listado de Artículos ---\n");
@@ -61,7 +61,7 @@ void mostrar_articulos(const articulos_t articulos[]) {
 
 /* Ordenamiento de Artículos */
 
-void ordenar_articulos(articulos_t articulos[]) {
+void ordenar_articulos(articulos_t *articulos) {
     int i, j;
     articulos_t aux;
 
